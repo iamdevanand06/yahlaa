@@ -3677,6 +3677,7 @@ td:last-child {
 
 .intro-block-content__social {
     display    : flex;
+    flex-direction: row;
     margin-left: 0;
     list-style : none;
 }
@@ -4986,4 +4987,16 @@ td:last-child {
         font-size  : var(--text-sm);
         line-height: var(--vspace-0_75);
     }
+}
+
+/* Modified - Dev Anand*/
+
+.intro-header__mid-type {
+    /* font-size  : clamp(var(--text-display), var(--text-3xl) + 10vw, 18.4rem); */
+    line-height: 1;
+    margin-top : 3%;
+}
+
+.business-choose-us{
+    border-color: #ffffff;
 }
