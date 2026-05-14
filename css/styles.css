@@ -169,6 +169,7 @@
     --color-black                 : var(--color-neutral-950);
     --color-pure-white            : #ffffff;
     --color-pure-black            : #000000;
+    --color-red                   : #C6243B;
 
   /* semantic colors
    * color-error(#ffd1d2), color-success(#c8e675), 
@@ -185,7 +186,7 @@
 
   /* background,surface and border colors
    */
-    --color-bg                    : var(--color-neutral-950);
+    --color-bg                    : #FFFFFF;
     --color-bg-inverse            : var(--color-neutral-600);
 
     --color-bg-primary            : var(--color-1-600);
@@ -314,7 +315,7 @@
     --base-size       : 62.5%;
     --multiplier      : 1;
     --space           : calc(3.2rem * var(--multiplier));
-    --base-font-size  : calc(2rem * var(--multiplier));
+    --base-font-size  : calc(18px * var(--multiplier));
 
   /* radius 
    */
@@ -1506,7 +1507,7 @@ body {
     font-size  : var(--type-size-body);
     font-weight: var(--type-weight-body);
     line-height: var(--type-line-height-body);
-    color      : var(--color-text);
+    color      : var(--color-black);
 }
 
 /* links
@@ -2391,8 +2392,8 @@ input[type=button] {
     cursor                 : pointer;
     transition             : all 0.3s;
     border-radius          : var(--btn-radius);
-    background-color       : var(--color-btn);
-    border                 : var(--btn-border-width) solid var(--color-btn);
+    background-color       : var(--color-red);
+    border                 : var(--btn-border-width) solid var(--color-red);
     -webkit-font-smoothing : antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition             : all 0.3s var(--ease-smooth-in-out);
@@ -3244,7 +3245,7 @@ td:last-child {
     visibility      : hidden;
     background-color: var(--color-bg);
     box-shadow      : var(--shadow-medium);
-    border-bottom   : 1px solid var(--color-bg-neutral-dark);
+    border-bottom   : 1px solid var(--color-red);
     position        : fixed;
     top             : 0;
     left            : 0;
@@ -3323,11 +3324,11 @@ td:last-child {
 
 .header-nav__links a:focus,
 .header-nav__links a:hover {
-    color: var(--color-text);
+    color: var(--color-red);
 }
 
 .header-nav__links .current a {
-    color: var(--color-white);
+    color: var(--color-red);
 }
 
 /* header contact num
@@ -3606,7 +3607,7 @@ td:last-child {
     font-size     : var(--text-lg);
     line-height   : 1;
     letter-spacing: -0.02em;
-    color         : var(--color-text);
+    color         : var(--color-black);
     padding-left  : 0.25em;
     margin-top    : var(--vspace-0_25);
     margin-bottom : calc(var(--vspace-0_375) * -1);
@@ -3618,7 +3619,7 @@ td:last-child {
     display         : block;
     height          : 1px;
     width           : var(--overline-hline);
-    background-color: var(--color-text-light);
+    background-color: var(--color-red);
     position        : absolute;
     top             : 50%;
     left            : calc((var(--overline-hline) + var(--gutter)) * -1);
@@ -3673,6 +3674,7 @@ td:last-child {
 .intro-block-content__text {
     border-top : 1px solid var(--color-border);
     padding-top: var(--vspace-0_5);
+    color: var(--color-red);
 }
 
 .intro-block-content__social {
@@ -3690,7 +3692,7 @@ td:last-child {
 .intro-block-content__social a {
     font-size     : var(--text-sm);
     letter-spacing: 0.15em;
-    color         : var(--color-text-light);
+    color         : var(--color-white);
 }
 
 /* --------------------------------------------------------------------
@@ -4018,6 +4020,7 @@ td:last-child {
 .s-about__content-end {
     padding-top   : var(--vspace-1_5);
     padding-bottom: var(--vspace-1);
+    font-size: 14px;
 }
 
 /* --------------------------------------------------------------------
@@ -4117,20 +4120,20 @@ td:last-child {
 
 .tab-nav__list li {
     padding-left : 0;
-    border-bottom: 1px solid var(--color-border);
+    /* border-bottom: 1px solid var(--color-border); */
 }
 
 .tab-nav__list li[data-tab-active] {
-    border-bottom: 1px solid var(--color-bg-accent);
+    /* border-bottom: 1px solid var(--color-bg-accent); */
 }
 
 .tab-nav__list li[data-tab-active] a {
-    background-color: var(--color-bg-accent);
+    background-color: var(--color-red);
     color           : var(--color-white);
 }
 
 .tab-nav__list li[data-tab-active] a::before {
-    color: var(--color-text);
+    color: var(--color-white);
 }
 
 .tab-nav__list li[data-tab-active] a svg {
@@ -4147,7 +4150,7 @@ td:last-child {
     display       : flex;
     align-items   : center;
     height        : 100%;
-    color         : var(--color-text);
+    color         : var(--color-red);
     padding-top   : var(--vspace-0_75);
     padding-bottom: var(--vspace-0_75);
     padding-left  : var(--vspace-0_75);
@@ -4159,7 +4162,7 @@ td:last-child {
     content          : counter(ctr, decimal-leading-zero) ".";
     font-size        : var(--text-xs);
     margin-right     : var(--vspace-0_625);
-    color            : var(--color-text-light);
+    color            : var(--color-red);
     counter-increment: ctr;
 }
 
@@ -4235,7 +4238,7 @@ td:last-child {
     margin-top   : 0;
     margin-bottom: var(--vspace-1);
     padding-left : var(--vspace-1);
-    color        : var(--color-text);
+    color        : var(--color-black);
     position     : relative;
 }
 
@@ -4264,7 +4267,7 @@ td:last-child {
 }
 
 .menu-list__item:nth-child(odd) {
-    background-color: var(--color-bg-neutral-dark);
+    background-color: var(--color-red);
 }
 
 .menu-list__item h4 {
@@ -4278,7 +4281,7 @@ td:last-child {
     font-size    : var(--text-sm);
     line-height  : var(--vspace-0_75);
     margin-bottom: var(--vspace-1);
-    color        : var(--color-text-light);
+    color        : var(--color-black);
 }
 
 .menu-list__item-desc {
@@ -4995,8 +4998,23 @@ td:last-child {
     /* font-size  : clamp(var(--text-display), var(--text-3xl) + 10vw, 18.4rem); */
     line-height: 1;
     margin-top : 3%;
+    color: var(--color-red);
 }
 
 .business-choose-us{
     border-color: #ffffff;
+}
+
+.intro-block-content-bult-text{
+    font-size: var(--base-font-size) !important;
+}
+
+.text-red{
+    color: var(--color-red) !important;
+}
+.text-black{
+    color: var(--color-black) !important;
+}
+.text-16x{
+    font-size: 16px !important;
 }
