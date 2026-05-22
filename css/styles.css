@@ -3690,7 +3690,7 @@ td:last-child {
 .intro-block-content__pic img {
     margin: 0;
     vertical-align: bottom;
-    aspect-ratio: 907/1000; /* 1050/600 */
+    aspect-ratio: 729/1000; /* 1050/600 */
 }
 
 .intro-block-content__text {
