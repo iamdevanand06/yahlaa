@@ -3045,6 +3045,7 @@ td:last-child {
 .section-header .text-display-title {
     margin-top: 44px;
     font-size: clamp(var(--text-display), var(--text-display) - 1rem + 2vw, var(--text-huge));
+    text-align: center;
 }
 
 .section-header::before {
@@ -5125,7 +5126,7 @@ td:last-child {
 }
 
 .intro-pad-tb {
-    margin: 12% 0% 0% 0%;
+    margin: 12% 0% 6% 0%;
 }
 
 .supply-team {
@@ -5613,12 +5614,13 @@ td:last-child {
     }
 
     .heading{
-      font-size:14px;
+      font-size:24px;
       font-weight:700;
       color:#d3412d;
       text-transform:uppercase;
       margin-bottom:25px;
       letter-spacing:1px;
+      text-align: center;
     }
 
     .top-grid{
@@ -5629,7 +5631,7 @@ td:last-child {
     }
 
     .card{
-      background:#fafafa;
+      background:#ffdfdfb8;
       border-radius:14px;
       overflow:hidden;
       border:1px solid #eee;
@@ -5650,12 +5652,14 @@ td:last-child {
       line-height:1.4;
       color:#222;
       margin-bottom:10px;
+      text-align: center;
     }
 
     .card p{
       font-size:12px;
       color:#777;
       line-height:1.5;
+      text-align: center;
     }
 
     .card img{
@@ -5670,7 +5674,7 @@ td:last-child {
 
     .bottom-title{
       color:#d3412d;
-      font-size:14px;
+      font-size:24px;
       font-weight:700;
       text-transform:uppercase;
       margin-bottom:20px;
@@ -5678,8 +5682,9 @@ td:last-child {
 
     .solutions{
       display:grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(7, 1fr);
       gap:20px;
+      text-align: center;
     }
 
     .solution{
@@ -5692,13 +5697,14 @@ td:last-child {
       width:26px;
       height:26px;
       border-radius:50%;
-      background:#ffe9e4;
-      color:#d3412d;
+      background:#6a994e;
+      color:#FFFFFF;
       display:flex;
       align-items:center;
       justify-content:center;
       font-weight:bold;
       font-size:14px;
+    align-self: anchor-center;
     }
 
     .solution h4{
