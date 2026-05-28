@@ -3068,6 +3068,9 @@ td:last-child {
     align-items: center;
     list-style: none;
     margin: 0;
+    @media(max-width:769px){
+        display: ruby-text;
+    }
 }
 
 .social-list li {
@@ -4653,6 +4656,9 @@ td:last-child {
 .s-footer {
     --bottom-padding: var(--vspace-2_5);
     --footer-logo-width: 16rem;
+    @media(max-width:769px){
+        text-align: center;
+    }
 
     padding-bottom: var(--bottom-padding);
 }
@@ -4762,12 +4768,17 @@ td:last-child {
 .s-footer .opening-hours {
     list-style: none;
     margin-left: 0;
+    font-size: small !important;
+    @media(max-width:769px){
+            display: inline-block;
+    }
 }
 
 .s-footer .opening-hours li {
     display: flex;
     padding: 0;
     align-items: baseline;
+
 }
 
 .s-footer .opening-hours__days {
@@ -5122,10 +5133,16 @@ td:last-child {
 
 .pad-top-4p {
     padding-top: 4%;
+    @media(max-width:769px){
+        padding-top: 14%;
+    }
 }
 
 .intro-pad-tb {
     margin: 12% 0% 6% 0%;
+    @media(max-width:769px) {
+        margin: 23% 0% 6% 0%;
+    }
 }
 
 .supply-team {
@@ -5157,6 +5174,17 @@ td:last-child {
       line-height:1.05;
       color:#b71c2b;
       font-weight:700;
+    }
+
+    @media (max-width:769px){
+        .section-left small{
+            text-align: center;
+            font-size:12px;
+        }
+        .section-left h1{
+            text-align: center;
+            font-size:30px;
+        }
     }
 
     .section-right{
@@ -5245,12 +5273,18 @@ td:last-child {
       justify-content:center;
       gap:20px;
       flex-wrap:wrap;
+      @media(max-width:769px){
+        gap:8px;
+      }
     }
 
     .bottom-line{
       width:40px;
       height:2px;
       background:var(--color-red);
+      @media(max-width: 769px){
+        width: 20px;
+      }
     }
 
     .shield{
@@ -5284,11 +5318,12 @@ td:last-child {
       }
 
       .card h3{
-        font-size:32px;
+        font-size:20px;
+        text-align: left;
       }
 
       .card p{
-        font-size:20px;
+        font-size:12px;
       }
     }
 }
@@ -5560,6 +5595,7 @@ td:last-child {
 }
 
 /* Hero Selection */
+.hero-part{
     .hero-section{
         width:100%;
         max-width:1100px;
@@ -5641,6 +5677,7 @@ td:last-child {
 
     .btn-outline:hover{
         background:var(--color-red);
+        color: var(--color-white);
     }
 
     .features{
@@ -5679,6 +5716,10 @@ td:last-child {
         flex:1;
         display:flex;
         justify-content:center;
+    scrollbar-width: auto;
+    @media(max-width:769px) {
+        margin-top: 10%;
+    }
     }
 
     .hero-image img{
@@ -5722,7 +5763,7 @@ td:last-child {
             gap:20px;
         }
     }
-
+}
 
     /* Challenges */
     .heading{
@@ -5733,6 +5774,9 @@ td:last-child {
       margin-bottom:25px;
       letter-spacing:1px;
       text-align: center;
+      @media(max-width:769px){
+        font-size:14px;
+      }
     }
 
     .top-grid{
@@ -5803,6 +5847,8 @@ td:last-child {
       display:flex;
       flex-direction:column;
       gap:10px;
+      padding: 10% 0%;
+      text-align: center;
     }
 
     .icon{
@@ -5863,6 +5909,9 @@ td:last-child {
       overflow:hidden;
       box-shadow:0 5px 15px rgba(0,0,0,0.15);
       background:#fff;
+      @media(max-width:769px){
+        width:100%;
+      }
     }
 
     /* FIRST ROW IMAGE */
@@ -5924,13 +5973,21 @@ td:last-child {
     }
 
     .heading-left h1{
+        padding-top:8%;
       font-size:58px;
       line-height:1.05;
       font-weight:800;
+      text-align: center;
     }
 
     .heading-left h1 span{
       color:#b3001b;
+    }
+
+    @media(max-width:769px){
+        .heading-left h1{
+        font-size:30px;
+        }
     }
 
     .heading-right{
@@ -6036,6 +6093,8 @@ td:last-child {
 
       .steps{
         gap:30px;
+        flex-wrap: wrap;
+
       }
 
       .arrow{
@@ -6053,7 +6112,7 @@ td:last-child {
       }
 
       .step-card{
-        width:100%;
+        width:70%;
       }
     }
 }
