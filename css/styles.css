@@ -5127,6 +5127,9 @@ td:last-child {
     color: white;
 }
 
+.item-center{
+text-align-last: center;
+}
 .border-color-white {
     border-color: white;
 }
@@ -6015,7 +6018,7 @@ td:last-child {
       border-radius:22px;
       padding:70px 25px 35px;
       text-align:center;
-      box-shadow:0 5px 18px var(--color-red);
+      box-shadow:0 5px 8px var(--color-red);
     }
 
     .step-number{
@@ -6038,7 +6041,7 @@ td:last-child {
     .icon-circle{
       width:95px;
       height:95px;
-      border:2px solid #c91f32;
+      border:2px solid #00000054;
       border-radius:50%;
       margin:0 auto 22px;
       display:flex;
@@ -6117,3 +6120,18 @@ td:last-child {
     }
 }
 
+/* Certificate */
+
+.pad-bot{
+    padding-bottom: 1%;
+    @media(max-width:769px){
+        padding-bottom: 4%;
+    }
+img{
+    width: 100px;
+    height: auto;
+    @media(max-width:769px){
+        width: 60px;
+    }
+}
+}
