@@ -3049,7 +3049,7 @@ td:last-child {
 
 .section-header::before {
     display: block;
-    content: attr(data-num) ".";
+    /* content: attr(data-num) "."; */
     font-family: var(--type-headings);
     font-weight: 400;
     font-size: var(--text-md);
@@ -4709,7 +4709,7 @@ td:last-child {
 }
 
 .s-footer__top::before {
-    content: "";
+    /* content: ""; */
     display: block;
     height: 1px;
     width: calc(100% - 2 * var(--gutter));
@@ -5157,6 +5157,8 @@ td:last-child {
 .supply-team {
     /* Industrial */
 
+    padding-top: 1%;
+
     .industries {
         width: 90%;
         max-width: 1400px;
@@ -5394,8 +5396,10 @@ td:last-child {
     font-weight: 700;
     letter-spacing: 1px;
     margin: 42px 11px 0px 0px;
-    ;
     text-transform: uppercase;
+    @media(max-width:1440px){
+        margin: 0;
+    }
 }
 
 .banner-content h1 {
@@ -5797,7 +5801,7 @@ td:last-child {
     font-size: 24px;
     font-weight: 700;
     color: #d3412d;
-    text-transform: uppercase;
+    text-transform:capitalize;
     margin-bottom: 25px;
     letter-spacing: 1px;
     text-align: center;
@@ -6006,7 +6010,7 @@ td:last-child {
         padding-top: 8%;
         font-size: 58px;
         line-height: 1.05;
-        font-weight: 800;
+        font-weight: 700;
         text-align: center;
     }
 
@@ -6154,7 +6158,7 @@ td:last-child {
 /* Certificate */
 
 .pad-bot {
-    padding-bottom: 1%;
+    padding-bottom: 3%;
 
     @media(max-width:768px) {
         padding-bottom: 4%;
