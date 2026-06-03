@@ -5376,6 +5376,9 @@ td:last-child {
     min-height: 180px;
     background: #111;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    @media screen and (min-width:320px) and (max-width:768px){
+        height: 296px;
+    }
 }
 
 /* LEFT CONTENT */
@@ -5436,6 +5439,11 @@ td:last-child {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+
+    @media screen and (min-width:320px) and (max-width:900px){
+        padding: 4px 9px;
+        font-size: 10px;
+    }
 }
 
 .btn-light {
@@ -5756,8 +5764,16 @@ td:last-child {
         border-radius: 14px;
         object-fit: cover;
         display: block;
-        @media screen and (min-width:769px) and (max-width:1024px){
-            height: 486px;
+        @media screen and (min-width:769px) and (max-width:987px){
+            height: 625px;
+        }
+
+        @media screen and (min-width:988px) and (max-width:1024px){
+            height: 500px;
+        }
+
+        @media screen and (min-width:1025px) and (max-width:1350px){
+            height: 513px;
         }
     }
 
@@ -6042,6 +6058,7 @@ td:last-child {
 
         @media screen and (min-width: 320px) and (max-width: 1024px) {
             flex-wrap: wrap;
+             gap: 36px;
         }
 
         .step-card {
@@ -6148,7 +6165,7 @@ td:last-child {
             }
 
             .step-card {
-                width: 70%;
+                width: 90%;
             }
         }
     }
@@ -6180,5 +6197,11 @@ flex-direction: column;
         @media screen and (min-width:769px) and (max-width:1024px){
             width: 90px;
         }
+    }
+}
+
+.no-img-mob{
+    @media screen and (min-width:320px) and (max-width:768px){
+display: none;
     }
 }
